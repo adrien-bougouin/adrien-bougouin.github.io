@@ -1,3 +1,7 @@
+body {
+  background-color: #eeeeee;
+}
+
 .small-caps {
   font-variant: small-caps;
 }
@@ -8,6 +12,38 @@ ul.contact-information {
 
 /* bootstrap */
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1092px;
+  }
+}
+
 .jumbotron {
+  background: 0;
+}
+
+.panel {
+  border: 0;
+  box-shadow: 0 0 5px 0 #777777;
+}
+
+.panel-heading {
+  /*background-color: #ff5f00;
+  color: #ffffff;*/
+  border-bottom: 1px solid #cccccc;
+}
+
+.panel-body {
+  font-size: 18px;
+}
+
+.panel-title {
+  font-size: 20px;
+  font-variant: small-caps;
+}
+
+blockquote {
+  /*border-color: #5f00ff;*/
+  border-color: #cccccc;
 }
 
