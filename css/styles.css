@@ -2,12 +2,42 @@ body {
   background-color: #eeeeee;
 }
 
+header img.img-profile {
+  border: 10px solid #ffffff;
+  margin-top: 25px;
+}
+
 .small-caps {
   font-variant: small-caps;
 }
 
 ul.contact-information {
   list-style-type: none;
+  padding-left: 0;
+}
+
+ul.contact-information > li {
+  font-style: italic;
+}
+
+.block-info {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #cccccc;
+}
+.block-info p:last-child,
+.block-info ul:last-child,
+.block-info ol:last-child {
+  margin-bottom: 0;
+}
+.block-info footer,
+.block-info small,
+.block-info .small {
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857143;
+  color: #777;
 }
 
 /* bootstrap */
@@ -20,6 +50,7 @@ ul.contact-information {
 
 .jumbotron {
   background: 0;
+  padding-bottom: 0;
 }
 
 .panel {
@@ -28,13 +59,7 @@ ul.contact-information {
 }
 
 .panel-heading {
-  /*background-color: #ff5f00;
-  color: #ffffff;*/
   border-bottom: 1px solid #cccccc;
-}
-
-.panel-body {
-  font-size: 18px;
 }
 
 .panel-title {
@@ -42,8 +67,11 @@ ul.contact-information {
   font-variant: small-caps;
 }
 
+.panel-body {
+  font-size: 18px;
+}
+
 blockquote {
-  /*border-color: #5f00ff;*/
   border-color: #cccccc;
 }
 
