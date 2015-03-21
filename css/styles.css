@@ -11,12 +11,12 @@ header img.img-profile {
   font-variant: small-caps;
 }
 
-ul.contact-information {
+ul.contact-info {
   list-style-type: none;
   padding-left: 0;
 }
 
-ul.contact-information > li {
+ul.contact-info > li {
   font-style: italic;
 }
 
@@ -38,6 +38,10 @@ ul.contact-information > li {
   font-size: 80%;
   line-height: 1.42857143;
   color: #777;
+}
+
+.label-as-badge {
+    border-radius: 50px;
 }
 
 /* bootstrap */
@@ -69,9 +73,5 @@ ul.contact-information > li {
 
 .panel-body {
   font-size: 18px;
-}
-
-blockquote {
-  border-color: #cccccc;
 }
 
