@@ -4,7 +4,7 @@ body {
 
 body > footer {
   color: #5f5f5f;
-  padding: 40px 0;
+  padding: 45px 0;
 }
 
 header img.img-profile {
@@ -61,7 +61,12 @@ ul.contact-info > li {
 }
 
 #education .panel, #skills .panel {
-  min-height: 635px;
+  min-height: 675px;
+}
+
+.btn.btn-social-icon {
+  border: 0;
+  border-radius: 20px;
 }
 
 /* bootstrap */
