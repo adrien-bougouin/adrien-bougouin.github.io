@@ -2,9 +2,12 @@ body {
   background-color: #eeeeee;
 }
 
+body > footer {
+  padding: 40px 0;
+}
+
 header img.img-profile {
   border: 10px solid #ffffff;
-  margin-top: 25px;
 }
 
 .small-caps {
@@ -44,13 +47,19 @@ ul.contact-info > li {
     border-radius: 50px;
 }
 
-/* bootstrap */
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1092px;
-  }
+#education {
+  padding-right: 8px;
 }
+
+#skills {
+  padding-left: 8px;
+}
+
+#education .panel, #skills .panel {
+  min-height: 635px;
+}
+
+/* bootstrap */
 
 .jumbotron {
   background: 0;
