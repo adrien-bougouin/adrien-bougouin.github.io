@@ -3,6 +3,7 @@ body {
 }
 
 body > footer {
+  color: #5f5f5f;
   padding: 40px 0;
 }
 
@@ -44,7 +45,11 @@ ul.contact-info > li {
 }
 
 .label-as-badge {
-    border-radius: 50px;
+  border-radius: 50px;
+}
+
+.label-as-badge a {
+  color: #ffffff;
 }
 
 #education {
