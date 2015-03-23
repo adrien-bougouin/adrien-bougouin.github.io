@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt, a4paper]{moderncv}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[margin={1cm, 1cm}]{geometry}
+\usepackage{natbib}
+
+\moderncvtheme[grey]{classic}
+
+\addto\captionsenglish{\renewcommand\refname{Publications}}
+\newcommand\cvlinewithcomment[3]{\cvline{#1}{#2\hfill{}#3}}
+
+\addto\captionsfrench{\renewcommand\refname{Publications}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Information
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\firstname{Adrien}
+\familyname{BOUGOUIN}
+\title{\Large{\textsc{Doctorant}} \large{en informatique}}
+\address{
+  LINA, Université de Nantes,\\
+  Bureau 212, 2 rue de la Houssinière,
+}{
+  BP 92208, 44322 Nantes cedex 3, France
+}
+\homepage{http://adrien-bougouin.github.io}
+\phone{+33(0) 51 12 58 28}
+\mobile{+33(0)6 95 76 65 54}
+\email{adrien.bougouin@univ-nantes.fr}
+\secondemail{adrien.bougouin@gmail.com}
+\extrainfo{06/06/1989}
+
+\begin{document}
+  \maketitle
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %% Education
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{\textsc{Formation}}
+    \cventry{2012 -- maintenant}          % year--year
+            {Doctorat en informatique}  % degree
+            {Université de Nantes}      % institution
+            {Nantes}                    % city
+            {France}                    % country
+            {Indexation automatique par termes-clés de documents en domaines de
+            spécialités.}               % description
+    \cventry{2010 -- 2012}
+            {Master}
+            {Université de Nantes}
+            {Nantes}
+            {France}
+            {ALMA~: Architecture logicielle.}
+    \cventry{2009 -- 2010}
+            {Licence}
+            {Université de Nantes}
+            {Nantes}
+            {France}
+            {Informatique.}
+    \cventry{2007 -- 2009}
+            {DUT}
+            {IUT de Nantes}
+            {Nantes}
+            {France}
+            {Informatique.}
+    \cventry{2004 -- 2007}
+            {Baccalauréat}
+            {Lycée Joubert}
+            {Ancenis}
+            {France}
+            {Sciences, option sciences de l'ingénieur et spécialité
+             physique/chimie.}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %% Skills and Expertise
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{\textsc{Compétences}}
+    \subsection{Informatique}
+      \cvline{Langages de programmation}
+             {Pyhon, Bash, C, C++, Objective-C, Java, OCaml}
+      \cvline{Technologies web}
+             {HTML, PHP, Javascript, Objective-J/Cappuccino}
+      \cvline{Conception}
+             {UML}
+      \cvline{Bases de données}
+             {Oracle, PostGIS, PL/SQL, JDBC}
+      \cvline{Systèmes d'exploitation}
+             {Mac OS X, Linux, Microsoft Windows}
+    \subsection{Langues}
+      \cvline{Français}{Natif}
+      \cvline{Anglais}{Bonne maitrise}
+      \cvline{Vietnamien}{Débutant}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %% Experience
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{\textsc{Expérience}}
+    \cventry{Octobre 2012 -- maintenant}                    % year--year
+            {Moniteur}                                    % job title
+            {IUT de Nantes}                               % employer
+            {Nantes}                                      % city
+            {France}                                      % country
+            {Cours d'UML, de HTML/CSS et de Javascript.}  % desciption
+    \cventry{Juillet 2014 -- Octobre 2014}
+            {Stagiaire}
+            {NII}
+            {Tokyo}
+            {Japan}
+            {\textbf{Extraction automatique de mots-clés.}\\
+             Réalisation, en Python, d'une extension supervisée de la méthode
+             TopicRank.}
+    \cventry{Mars 2012 -- Août 2012}
+            {Stagiaire}
+            {NII}
+            {Tokyo}
+            {Japan}
+            {\textbf{Imitation du comportement humain sur un robot humanoïd.}\\
+             Réalisation, en C++, d'un système utilisant la Kinect pour mouvoir
+             le robot humanoïd NAO.}
+    \cventry{Juiller 2011--Août 2011}
+            {Concepteur développeur}
+            {Magic Instinct Software}
+            {Nantes}
+            {France}
+            {\textbf{Application web de détourage de cartes.}\\
+             Réalisation d'une application Javascript utilisant le
+             \textit{framework} OpenLayers pour permettre à un utilisateur de
+             détourer des cartes marines.}
+    \cventry{Avril 2010--Mai 2010}
+            {Stagiaire}
+            {Magic Instinct Software}
+            {Nantes}
+            {France}
+            {\textbf{Application web de suivi de bouées au large de la
+             Guadeloupe.}\\
+             Réalisation d'une application Objective-J/Cappuccino pour suivre
+             des bouées marines avec Google Maps.}
+    \cventry{April 2009--June 2009}
+            {Stagiaire}
+            {IRCCyN}
+            {Nantes}
+            {France}
+            {\textbf{Implémentation de la communication externe OSEK COM.}\\
+             Implémentation, en C, de la spécification OSEK COM pour la
+             communication externe du système d'exploitation temps réel
+             Trampoline.}
+
+  \bibliographystyle{unsrt}
+  \bibliography{../publication}
+  \nocite{*}
+\end{document}
+

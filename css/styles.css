@@ -4,11 +4,16 @@ body {
 
 body > footer {
   color: #5f5f5f;
-  padding: 45px 0;
+  padding: 15px 0 35px 0;
 }
 
-header img.img-profile {
+body > header img.img-profile {
   border: 10px solid #ffffff;
+}
+
+body > footer .btn.btn-social-icon {
+  border: 0;
+  border-radius: 20px;
 }
 
 .small-caps {
@@ -52,21 +57,22 @@ ul.contact-info > li {
   color: #ffffff;
 }
 
-#education {
-  padding-right: 8px;
+/* Medium devices (desktops, 992px and up) */
+@media(min-width: 992px) {
+  #education .panel, #skills .panel {
+    height: 660px;
+  }
 }
 
-#skills {
-  padding-left: 8px;
+/* Large devices (large desktops, 1200px and up) */
+@media(min-width: 1200px) {
+  #education .panel, #skills .panel {
+    height: 620px;
+  }
 }
 
-#education .panel, #skills .panel {
-  min-height: 675px;
-}
-
-.btn.btn-social-icon {
-  border: 0;
-  border-radius: 20px;
+.thumbnail .caption > h3 {
+  margin-top: 0;
 }
 
 /* bootstrap */
