@@ -3,7 +3,7 @@
 ################################################################################
 
 cv_NAME	= resume
-bib_FILE		= ../publication.bib
+bib_FILE		= ../publication_fr.bib
 needed_FILES	=  $(bib_FILE)
 
 default: $(cv_NAME).pdf
