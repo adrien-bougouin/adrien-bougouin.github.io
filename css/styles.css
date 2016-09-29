@@ -9,7 +9,15 @@ body > footer {
 
 body > header img.img-profile {
   border: 10px solid #ffffff;
-  margin-top: 35px;
+  margin-top: 8px;
+  width: 256px;
+}
+
+/* Below nedium devices (992px and lower) */
+@media(max-width: 992px) {
+  body > header img.img-profile {
+    margin-top: 25px;
+  }
 }
 
 body > footer .btn.btn-social-icon {
