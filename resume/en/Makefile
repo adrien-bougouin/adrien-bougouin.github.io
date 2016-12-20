@@ -21,3 +21,6 @@ $(cv_NAME).pdf: $(cv_NAME).tex $(needed_FILES)
 clean:
 	rm -rf *.aux *.bbl *.blg *.log *.out *.toc *.ps *.dvi
 
+mrproper: clean
+	rm $(cv_NAME).pdf
+
