@@ -1,0 +1,72 @@
+/* https://ethanschoonover.com/solarized/ */
+:root {
+  /* Dark background tones */
+  --c-solarized-base03: #002b36;
+  --c-solarized-base02: #073642;
+  /* Content tones */
+  --c-solarized-base01: #586e75;
+  --c-solarized-base00: #657b83;
+  --c-solarized-base0:  #839496;
+  --c-solarized-base1:  #93a1a1;
+  /* Light background tones */
+  --c-solarized-base2:  #eee8d5;
+  --c-solarized-base3:  #fdf6e3;
+
+  /* Accent colors */
+  --c-solarized-yellow:  #b58900;
+  --c-solarized-orange:  #cb4b16;
+  --c-solarized-red:     #dc322f;
+  --c-solarized-magenta: #d33682;
+  --c-solarized-violet:  #6c71c4;
+  --c-solarized-blue:    #268bd2;
+  --c-solarized-cyan:    #2aa198;
+  --c-solarized-green:   #859900;
+}
+
+body.background-light {
+  --c-background:     var(--c-solarized-base3);
+  --c-background-hl:  var(--c-solarized-base2);
+  --c-text-bold:      var(--c-solarized-base01);
+  --c-text-primary:   var(--c-solarized-base00);
+  --c-text-secondary: var(--c-solarized-base1);
+  --c-link:           var(--c-solarized-blue);
+}
+
+body.background-dark {
+  --c-background:     var(--c-solarized-base03);
+  --c-background-hl:  var(--c-solarized-base02);
+  --c-text-bold:      var(--c-solarized-base1);
+  --c-text-primary:   var(--c-solarized-base0);
+  --c-text-secondary: var(--c-solarized-base01);
+  --c-link:           var(--c-solarized-blue);
+}
+
+::selection {
+  background: var(--c-background-hl);
+}
+
+body {
+  background: var(--c-background);
+  font-family: "Menlo", "Consolas", "Ubuntu Mono", "Roboto Mono", "DejaVu Sans Mono", monospace;
+  color: var(--c-text-primary);
+}
+
+section {
+  border-color: var(--c-background-hl);
+}
+
+h1, h2, h3, b {
+  color: var(--c-text-bold);
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  color: var(--c-link);
+}
+
+img {
+  border-color: var(--c-background-hl);
+}

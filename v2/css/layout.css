@@ -1,0 +1,101 @@
+:root {
+  --gutter-size: 8px;
+
+  --max-profile-picture-width: 256px;
+  --profile-picture-border-width: 8px;
+}
+
+body {
+  margin: var(--gutter-size) 0;
+}
+
+section, h1, h2, h3, div, p, ol, ul {
+  margin: 0;
+}
+
+section {
+  margin: 0 var(--gutter-size);
+  padding: var(--gutter-size) var(--gutter-size) calc(var(--gutter-size) * 2) var(--gutter-size);
+  width: calc(100% - (var(--gutter-size) * 2) - (var(--gutter-size) * 2));
+}
+
+section:not(:first-child) {
+  border-top-style: solid;
+  border-top-width: 2px;
+}
+
+.section__header {
+  margin-bottom: var(--gutter-size);
+}
+
+.section__content > *:not(:first-child) {
+  margin-top: var(--gutter-size);
+}
+
+#information img.profile-picture {
+  display: block;
+  border-style: solid;
+  border-width: var(--profile-picture-border-width);
+  border-radius: 50%;
+  margin: var(--gutter-size) auto;
+  width: 80%;
+  max-width: var(--max-profile-picture-width);
+}
+
+#skills ul {
+  padding: 0;
+  list-style: none;
+}
+
+.skills-block {
+  margin-top: var(--gutter-size);
+}
+
+@media only screen and (min-width: 832px) {
+  :root {
+    --gutter-size: 16px;
+    --desktop-width: calc(832px - (var(--gutter-size) * 2));
+  }
+
+  section {
+    margin: 0 auto 0 auto;
+    width: var(--desktop-width);
+  }
+
+  #information {
+    min-height: calc(var(--max-profile-picture-width) + (var(--profile-picture-border-width) * 2));
+  }
+
+  #information .section__header,
+  #information .section__content {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - var(--gutter-size) - (var(--max-profile-picture-width) + (var(--profile-picture-border-width) * 2)));
+  }
+
+  #information img.profile-picture {
+    display: inline-block;
+    float: right;
+    margin-top: 0;
+    width: var(--max-profile-picture-width);
+  }
+
+  #introduction p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  #skills .section__content {
+    display: flex;
+  }
+
+  #skills .section__content > * {
+    flex: auto;
+  }
+
+  #skills .section__content > *:not(:first-child) {
+    margin-top: 0;
+    margin-left: calc(var(--gutter-size) * 2);
+  }
+}

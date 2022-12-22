@@ -1,0 +1,18 @@
+.commented {
+  color: var(--c-text-secondary);
+}
+
+.commented::before {
+  content: "//\00a0"
+}
+
+.masked {
+  background: linear-gradient(to right, currentColor 50%, rgb(0, 0, 0, 0) 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: background 0.75s ease-in-out;
+}
+
+.masked:hover {
+  background-position: right bottom;
+}
