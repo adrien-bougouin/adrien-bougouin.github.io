@@ -20,20 +20,20 @@
 
   display: inline-block;
   border: solid 1px currentColor;
-  width: calc((1ch * 5) + (1px * 4));
-  height: 1ch;
+  width: calc((0.5em * 5) + (1px * 4));
+  height: 0.5em;
 
   background: linear-gradient(
     to right,
-    var(--c-lvl1) 0 1ch,
-    currentColor 1ch calc(1ch + 1px),
-    var(--c-lvl2) calc(1ch + 1px) calc(2ch + 1px),
-    currentColor calc(2ch + 1px) calc(2ch + 2px),
-    var(--c-lvl3) calc(2ch + 2px) calc(3ch + 2px),
-    currentColor calc(3ch + 2px) calc(3ch + 3px),
-    var(--c-lvl4) calc(3ch + 3px) calc(4ch + 3px),
-    currentColor calc(4ch + 3px) calc(4ch + 4px),
-    var(--c-lvl5) calc(4ch + 4px) calc(5ch + 4px)
+    var(--c-lvl1) 0 0.5em,
+    var(--c-text-primary) 0.5em calc(0.5em + 1px),
+    var(--c-lvl2) calc(0.5em + 1px) calc(1em + 1px),
+    var(--c-text-primary) calc(1em + 1px) calc(1em + 2px),
+    var(--c-lvl3) calc(1em + 2px) calc(1.5em + 2px),
+    var(--c-text-primary) calc(1.5em + 2px) calc(1.5em + 3px),
+    var(--c-lvl4) calc(1.5em + 3px) calc(2em + 3px),
+    var(--c-text-primary) calc(2em + 3px) calc(2em + 4px),
+    var(--c-lvl5) calc(2em + 4px) calc(2.5em + 4px)
   );
 }
 
@@ -81,7 +81,7 @@
   --border-spacing: calc((1ch / 2) - (var(--border-width) / 2));
 
   margin-left: var(--border-spacing);
-  border-left: solid var(--border-width) var(--c-solarized-cyan);
+  border-left: solid var(--border-width) var(--c-solarized-yellow);
   padding-left: var(--border-spacing);
 }
 
@@ -92,7 +92,6 @@
 
   display: flex;
   margin-top: calc((var(--padding-size) / 2) * -1);
-  overflow: scroll;
 }
 
 .group-section__nav__selector {
