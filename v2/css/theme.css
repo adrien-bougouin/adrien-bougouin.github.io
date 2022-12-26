@@ -29,6 +29,7 @@ body.background-light {
   --c-text-bold:      var(--c-solarized-base01);
   --c-text-primary:   var(--c-solarized-base00);
   --c-text-secondary: var(--c-solarized-base1);
+  --c-accent:         var(--c-solarized-cyan);
   --c-link:           var(--c-solarized-blue);
 }
 
@@ -38,6 +39,7 @@ body.background-dark {
   --c-text-bold:      var(--c-solarized-base1);
   --c-text-primary:   var(--c-solarized-base0);
   --c-text-secondary: var(--c-solarized-base01);
+  --c-accent:         var(--c-solarized-cyan);
   --c-link:           var(--c-solarized-blue);
 }
 

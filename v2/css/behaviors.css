@@ -7,7 +7,7 @@
 }
 
 .masked {
-  background: linear-gradient(to right, currentColor 50%, rgb(0, 0, 0, 0) 50%);
+  background: linear-gradient(to right, currentColor 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: left bottom;
   transition: background 0.75s ease-in-out;
