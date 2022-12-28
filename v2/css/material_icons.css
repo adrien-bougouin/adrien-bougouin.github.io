@@ -1,0 +1,28 @@
+.material-icons {
+  font-size: 2ch;
+  vertical-align: bottom;
+}
+
+.material-icons:hover {
+  text-decoration: none;
+}
+
+.material-icons.bib-icon::before {
+  content: "format_quote";
+}
+
+.material-icons.paper-icon::before {
+  content: "description";
+}
+
+.material-icons.poster-icon::before {
+  content: "image";
+}
+
+.material-icons.slides-icon::before {
+  content: "slideshow";
+}
+
+.material-icons.thesis-icon::before {
+  content: "description";
+}
