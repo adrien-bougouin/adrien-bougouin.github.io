@@ -77,24 +77,6 @@
   --c-lvl5: var(--color);
 }
 
-.item-list {
-  padding: 0;
-  list-style: none;
-}
-
-.item-list__entry__title {
-  margin-bottom: var(--gutter-size);
-}
-
-.item-list__entry {
-  --border-width: 2px;
-  --border-spacing: calc((1ch / 2) - (var(--border-width) / 2));
-
-  margin-left: var(--border-spacing);
-  border-left: solid var(--border-width) var(--c-accent);
-  padding-left: var(--border-spacing);
-}
-
 .group-section__nav {
   display: flex;
 }
@@ -139,4 +121,52 @@
 .group-section--experience .group-section__content--experience,
 .group-section--publications .group-section__content--publications {
   display: revert;
+}
+
+.item-list {
+  padding: 0;
+  list-style: none;
+}
+
+.item-list__entry__header {
+  margin-bottom: var(--gutter-size);
+}
+
+.item-list__entry {
+  --border-width: 2px;
+  --border-spacing: calc((1ch / 2) - (var(--border-width) / 2));
+
+  margin-left: var(--border-spacing);
+  border-left: solid var(--border-width) var(--c-accent);
+  padding-left: var(--border-spacing);
+}
+
+.item-list__entry__footer {
+  margin-top: var(--gutter-size);
+}
+
+.tooltip-anchor {
+  position: relative;
+}
+
+.tooltip-anchor .tooltip {
+  display: none;
+}
+
+.tooltip-anchor:hover > .tooltip {
+  --vertical-padding-unit: 1ch;
+
+  z-index: 1;
+  display: inline-block;
+  position: absolute;
+  bottom: calc(100%);
+  padding: calc(var(--vertical-padding-unit) * 0.67) 1ch;
+  margin-bottom: calc(var(--vertical-padding-unit) * 0.33);
+  background-color: var(--c-background-hl);
+  color: var(--c-text-primary);
+  text-align: center;
+}
+
+.item-list__entry__footer .tooltip-anchor:hover > .tooltip {
+  --vertical-padding-unit: var(--gutter-size);
 }

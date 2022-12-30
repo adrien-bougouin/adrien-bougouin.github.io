@@ -1,14 +1,15 @@
 .material-icons {
+  display: inline;
   font-size: 2ch;
   vertical-align: bottom;
 }
 
-.material-icons:hover {
-  text-decoration: none;
-}
-
 .material-icons.bib-icon::before {
   content: "format_quote";
+}
+
+.material-icons.external-link-icon::before {
+  content: "launch";
 }
 
 .material-icons.paper-icon::before {

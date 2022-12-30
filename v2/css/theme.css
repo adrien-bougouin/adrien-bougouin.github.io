@@ -70,10 +70,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: revert;
-}
-
 img {
   border-color: var(--c-background-hl);
 }
