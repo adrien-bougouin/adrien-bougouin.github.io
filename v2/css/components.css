@@ -2,7 +2,9 @@ button {
   --border-width: 1px;
   --horizontal-spacing-unit: 1ch;
 
+  margin: 0;
   border: solid 1px var(--c-background-hl);
+  border-radius: 0;
   padding: calc(0.5ch - var(--border-width)) calc(var(--horizontal-spacing-unit) - var(--border-width));
   background: var(--c-background);
   color: var(--c-text-secondary);
@@ -186,10 +188,6 @@ button:hover,
     margin-top: var(--gutter-size);
 }
 
-.item-list__entry__header {
-  margin-bottom: var(--gutter-size);
-}
-
 .item-list__entry {
   --border-width: 2px;
   --border-spacing: calc((1ch / 2) - (var(--border-width) / 2));
@@ -199,7 +197,8 @@ button:hover,
   padding-left: var(--border-spacing);
 }
 
-.item-list__entry__footer {
+.item-list__entry__header + .item-list__entry__content,
+:where(.item-list__entry__header, .item-list__entry__content) + .item-list__entry__footer {
   margin-top: var(--gutter-size);
 }
 
@@ -217,12 +216,31 @@ button:hover,
   z-index: 1;
   display: inline-block;
   position: absolute;
-  bottom: calc(100%);
-  padding: calc(var(--vertical-spacing-unit) * 0.5) 1ch;
-  margin-bottom: calc(var(--vertical-spacing-unit) * 0.5);
+  padding: var(--vertical-spacing-unit) 1ch;
   background-color: var(--c-background-hl);
   color: var(--c-text-primary);
   text-align: center;
+}
+
+.tooltip-anchor:hover > :where(.tooltip:not(.tooltip--bottom), .tooltip--top) {
+  bottom: 100%;
+}
+
+.tooltip-anchor:hover > .tooltip--bottom {
+  top: 100%;
+}
+
+.tooltip-anchor:hover > :where(.tooltip:not(.tooltip--left), .tooltip--right) {
+  left: 0;
+}
+
+.tooltip-anchor:hover > .tooltip--left {
+  right: 0;
+  width: max-content;
+}
+
+.background-toggle__info.tooltip-anchor {
+  position: revert;
 }
 
 .item-list__entry__footer .tooltip-anchor:hover > .tooltip {

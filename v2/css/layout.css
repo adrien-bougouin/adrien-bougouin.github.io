@@ -34,9 +34,17 @@ section + section {
 }
 
 .background-toggle {
-  position: fixed;
+  position: fixed !important;
   top: var(--gutter-size);
   right: var(--gutter-size);
+}
+
+.background-toggle > div {
+  display: inline-block;
+}
+
+.background-toggle .background-toggle__info {
+  padding: 0.5ch 0;
 }
 
 #information img.profile-picture {
@@ -107,7 +115,7 @@ section + section {
   }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1280px) {
   .background-toggle {
     display: none !important;
   }

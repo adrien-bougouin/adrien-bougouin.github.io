@@ -19,7 +19,7 @@
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .material-icons.bib-icon::after {
@@ -32,6 +32,14 @@
 
 .material-icons.external-link-icon::after {
   content: "launch";
+}
+
+.material-icons.filter-icon::after {
+  content: "filter_list";
+}
+
+.material-icons.info-icon::after {
+  content: "info";
 }
 
 .material-icons.light-mode-icon::after {
@@ -48,6 +56,10 @@
 
 .material-icons.slides-icon::after {
   content: "slideshow";
+}
+
+.material-icons.thanks-icon::after {
+  content: "favorite";
 }
 
 .material-icons.thesis-icon::after {
