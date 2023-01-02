@@ -19,7 +19,7 @@ section {
   width: calc(100% - (var(--gutter-size) * 2) - (var(--gutter-size) * 2));
 }
 
-section:not(:first-child) {
+section + section {
   border-top-style: solid;
   border-top-width: 2px;
 }
@@ -30,6 +30,13 @@ section:not(:first-child) {
 
 .section__content > *:not(:first-child) {
   margin-top: var(--gutter-size);
+}
+
+.background-toggle {
+  display: none;
+  position: absolute;
+  top: calc(var(--gutter-size) * 2);
+  right: calc(var(--gutter-size) * 2);
 }
 
 #information img.profile-picture {
@@ -97,5 +104,11 @@ section:not(:first-child) {
   #skills .section__content > *:not(:first-child) {
     margin-top: 0;
     margin-left: calc(var(--gutter-size) * 2);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .background-toggle {
+    display: revert;
   }
 }

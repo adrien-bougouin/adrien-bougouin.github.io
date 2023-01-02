@@ -1,3 +1,31 @@
+button {
+  --border-width: 1px;
+  --horizontal-spacing-unit: 1ch;
+
+  border: solid 1px var(--c-background-hl);
+  padding: calc(0.5ch - var(--border-width)) calc(var(--horizontal-spacing-unit) - var(--border-width));
+  background: var(--c-background);
+  color: var(--c-text-secondary);
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+button + button {
+  margin-left: calc(var(--border-width) * -1);
+  padding-left: var(--horizontal-spacing-unit);
+}
+
+button:hover,
+.background--light .button--light,
+.background--dark .button--dark,
+.filtered-view--all .button--all,
+.filtered-view--english-only .button--english-only,
+.filtered-view--french-only .button--french-only {
+  background: var(--c-background-hl);
+  color: var(--c-text-bold);
+}
+
 .email + .email {
   margin-top: 1px;
 }
@@ -123,9 +151,23 @@
   display: revert;
 }
 
+.filtered-view .filtered-view__content {
+  display: none;
+}
+
+.filtered-view--all .filtered-view__content,
+#publications.filtered-view--english-only .filtered-view__content--english,
+#publications.filtered-view--french-only .filtered-view__content--french {
+  display: revert;
+}
+
 .item-list {
   padding: 0;
   list-style: none;
+}
+
+.item-list li:not(:first-child) {
+    margin-top: var(--gutter-size);
 }
 
 .item-list__entry__header {
@@ -154,19 +196,19 @@
 }
 
 .tooltip-anchor:hover > .tooltip {
-  --vertical-padding-unit: 1ch;
+  --vertical-spacing-unit: 1ch;
 
   z-index: 1;
   display: inline-block;
   position: absolute;
   bottom: calc(100%);
-  padding: calc(var(--vertical-padding-unit) * 0.67) 1ch;
-  margin-bottom: calc(var(--vertical-padding-unit) * 0.33);
+  padding: calc(var(--vertical-spacing-unit) * 0.5) 1ch;
+  margin-bottom: calc(var(--vertical-spacing-unit) * 0.5);
   background-color: var(--c-background-hl);
   color: var(--c-text-primary);
   text-align: center;
 }
 
 .item-list__entry__footer .tooltip-anchor:hover > .tooltip {
-  --vertical-padding-unit: var(--gutter-size);
+  --vertical-spacing-unit: var(--gutter-size);
 }

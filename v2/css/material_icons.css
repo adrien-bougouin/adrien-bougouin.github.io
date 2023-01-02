@@ -1,29 +1,55 @@
-.material-icons {
-  display: inline;
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/material_icons.woff2) format('woff2');
+}
+
+.material-icons::after {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
   font-size: 2ch;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
   vertical-align: bottom;
 }
 
-.material-icons.bib-icon::before {
+.material-icons.bib-icon::after {
   content: "format_quote";
 }
 
-.material-icons.external-link-icon::before {
+.material-icons.dark-mode-icon::after {
+  content: "dark_mode";
+}
+
+.material-icons.external-link-icon::after {
   content: "launch";
 }
 
-.material-icons.paper-icon::before {
+.material-icons.light-mode-icon::after {
+  content: "light_mode";
+}
+
+.material-icons.paper-icon::after {
   content: "description";
 }
 
-.material-icons.poster-icon::before {
+.material-icons.poster-icon::after {
   content: "image";
 }
 
-.material-icons.slides-icon::before {
+.material-icons.slides-icon::after {
   content: "slideshow";
 }
 
-.material-icons.thesis-icon::before {
+.material-icons.thesis-icon::after {
   content: "description";
 }

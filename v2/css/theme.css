@@ -23,7 +23,7 @@
   --c-solarized-green:   #859900;
 }
 
-body.background-light {
+body.background--light {
   --c-background:     var(--c-solarized-base3);
   --c-background-hl:  var(--c-solarized-base2);
   --c-text-bold:      var(--c-solarized-base01);
@@ -33,7 +33,7 @@ body.background-light {
   --c-link:           var(--c-solarized-blue);
 }
 
-body.background-dark {
+body.background--dark {
   --c-background:     var(--c-solarized-base03);
   --c-background-hl:  var(--c-solarized-base02);
   --c-text-bold:      var(--c-solarized-base1);
@@ -48,8 +48,10 @@ body.background-dark {
 }
 
 body {
+  --font-family: "Menlo", "Consolas", "Ubuntu Mono", "Roboto Mono", "DejaVu Sans Mono", monospace;
+
   background: var(--c-background);
-  font-family: "Menlo", "Consolas", "Ubuntu Mono", "Roboto Mono", "DejaVu Sans Mono", monospace;
+  font-family: var(--font-family);
   color: var(--c-text-primary);
 }
 
