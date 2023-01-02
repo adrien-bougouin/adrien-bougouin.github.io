@@ -11,9 +11,17 @@ button {
   cursor: pointer;
 }
 
-button + button {
-  margin-left: calc(var(--border-width) * -1);
-  padding-left: var(--horizontal-spacing-unit);
+.button-sequence {
+  display: inline-block;
+  border: solid 1px var(--c-background-hl);
+}
+
+.button-sequence button {
+  border: none;
+}
+
+.button-sequence button + button {
+  border-left: solid 1px var(--c-background-hl);
 }
 
 button:hover,
@@ -24,6 +32,14 @@ button:hover,
 .filtered-view--french-only .button--french-only {
   background: var(--c-background-hl);
   color: var(--c-text-bold);
+}
+
+.background--light .button--light:hover,
+.background--dark .button--dark:hover,
+.filtered-view--all .button--all:hover,
+.filtered-view--english-only .button--english-only:hover,
+.filtered-view--french-only .button--french-only:hover {
+  cursor: revert;
 }
 
 .email + .email {

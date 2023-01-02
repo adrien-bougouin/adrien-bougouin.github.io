@@ -38,7 +38,7 @@
     </script>
   </head>
   <body class="background--light">
-    <div class="background-toggle">
+    <div class="background-toggle button-sequence">
       <button
         class="button--light material-icons light-mode-icon"
         onClick="setBackgroundTheme('light')"
@@ -265,13 +265,13 @@
       </ol>
 
       <div id="publications" class="section__content group-section__content group-section__content--publications filtered-view filtered-view--all">
-        <div class="filtered-view__filters">
+        <div class="filtered-view__filters button-sequence">
           <button class="button--all" onClick="selectFilter('publications', 'all')" selected>
             All
           </button><button class="button--english-only" onClick="selectFilter('publications', 'english-only')">
-            In English
+            English
           </button><button class="button--french-only" onClick="selectFilter('publications', 'french-only')">
-            In French
+            French
           </button>
         </div>
 

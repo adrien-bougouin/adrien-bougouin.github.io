@@ -15,13 +15,14 @@ section, h1, h2, h3, div, p, ol, ul {
 
 section {
   margin: 0 var(--gutter-size);
-  padding: var(--gutter-size) var(--gutter-size) calc(var(--gutter-size) * 2) var(--gutter-size);
+  padding: 0 var(--gutter-size) calc(var(--gutter-size) * 2) var(--gutter-size);
   width: calc(100% - (var(--gutter-size) * 2) - (var(--gutter-size) * 2));
 }
 
 section + section {
   border-top-style: solid;
   border-top-width: 2px;
+  padding-top: var(--gutter-size);
 }
 
 .section__header {
@@ -33,10 +34,9 @@ section + section {
 }
 
 .background-toggle {
-  display: none;
-  position: absolute;
-  top: calc(var(--gutter-size) * 2);
-  right: calc(var(--gutter-size) * 2);
+  position: fixed;
+  top: var(--gutter-size);
+  right: var(--gutter-size);
 }
 
 #information img.profile-picture {
@@ -107,8 +107,8 @@ section + section {
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (max-width: 1080px) {
   .background-toggle {
-    display: revert;
+    display: none !important;
   }
 }
