@@ -3,7 +3,8 @@
     <title>Adrien Bougouin</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="css/material_icons.css">
+    <link rel="stylesheet" href="css/emojis.css">
+    <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
@@ -39,25 +40,24 @@
     </script>
   </head>
   <body class="background--light">
-    <div class="background-toggle">
-      <div class="background-toggle__info tooltip-anchor material-icons info-icon">
+    <div class="background-toggle"><div class="background-toggle__info tooltip-anchor material-icons info-icon">
         <div class="tooltip tooltip--bottom tooltip--left material-icons thanks-icon">
           <a href="https://ethanschoonover.com/solarized" target="blank">Solarized</a> theme by <b>Ethan Schoonover</b>
         </div>
       </div>
 
-      <div class="button-sequence">
-        <button
-          class="button--light tooltip-anchor material-icons light-mode-icon"
+      <div class="selector-sequence">
+        <span
+          class="selector selector--light tooltip-anchor material-icons light-mode-icon"
           onClick="setBackgroundTheme('light')"
         >
           <span class="tooltip tooltip--bottom tooltip--left">Light theme</span>
-        </button><button
-          class="button--dark tooltip-anchor material-icons dark-mode-icon"
+        </span><span
+          class="selector selector--dark tooltip-anchor material-icons dark-mode-icon"
           onClick="setBackgroundTheme('dark')"
         >
           <span class="tooltip tooltip--bottom tooltip--left">Dark theme</span>
-        </button>
+        </span>
       </div>
     </div>
 
@@ -98,10 +98,9 @@
     <section id="introduction">
       <div class="section__content">
         <p>
-        TODO: introduction
-        </p>
-        <p>
-        TODO: introduction
+          I am a software engineer in Tokyo.
+          I studied Computer Science for eight years and have been a software engineer for more than seven years.
+          I am passionate about my work <span class="noto-emoji smiling-face--with-halo"></span> I always have new ideas <span class="noto-emoji smiling-face--with-halo"></span> (I like to punctuate sentences with emojis) and I barely ever finish any personal project <span class="noto-emoji grinning-face--with-sweat"></span>
         </p>
       </div>
     </section>
@@ -126,7 +125,7 @@
                 <span class="score-ladder score-ladder--lvl4"></span>
               </li>
               <li>
-                HTML, CSS, Javascript, Typescript, Vue.js
+                HTML/CSS, Javascript, Typescript, Vue.js
                 <span class="score-ladder score-ladder--lvl3"></span>
               </li>
               <li>
@@ -176,10 +175,14 @@
 
     <section id="experience_n_publications" class="group-section group-section--experience">
       <nav class="section__header group-section__nav">
-        <h2 class="group-section__nav__selector group-section__nav__selector--experience"
-            onClick="selectGroupContent('experience_n_publications', 'experience')">Experience</h2>
-        <h2 class="group-section__nav__selector group-section__nav__selector--publications"
-            onClick="selectGroupContent('experience_n_publications', 'publications')">Publications</h2>
+        <h2
+          class="group-section__nav__selector group-section__nav__selector--experience"
+          onClick="selectGroupContent('experience_n_publications', 'experience')"
+        >Experience</h2>
+        <h2
+          class="group-section__nav__selector group-section__nav__selector--publications"
+          onClick="selectGroupContent('experience_n_publications', 'publications')"
+        >Publications</h2>
       </nav>
 
       <ol id="experience" class="section__content group-section__content group-section__content--experience item-list">
@@ -190,14 +193,24 @@
             <div class="item-list__entry__header">
               <b>Software Engineer</b>, Wovn Technologies, Inc. (Tokyo, Japan)
             </div>
+
             <p class="item-list__entry__content">
-            WOVN.io is a website localisation platform. I am one of the
-            first software engineers of WOVN.io. I grew up together with the
-            product, the development team, and the company. Now a senior
-            developer at Wovn Technologies, Inc., I am also mentoring other
-            software engineers and have regular one-on-ones to listen for
-            organizational issues and help tackling them.
+              WOVN.io is a website localisation platform. I am one of the
+              first software engineers of WOVN.io. I grew up together with the
+              product, the development team, and the company. Now a senior
+              developer at Wovn Technologies, Inc., I am also mentoring other
+              software engineers and have regular one-on-ones to listen for
+              organizational issues and help tackling them.
             </p>
+
+            <div class="item-list__entry__footer">
+              <span class="tag">Ruby</span>
+              <span class="tag">Rails</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Javascript</span>
+              <span class="tag">Typescript</span>
+              <span class="tag">Vue.js</span>
+            </div>
           </div>
         </li>
         <li>
@@ -207,8 +220,9 @@
             <div class="item-list__entry__header">
               <b>Teaching Assistant</b>, University Institute of Technology Nantes (Nantes, France)
             </div>
+
             <p class="item-list__entry__content">
-            Assisted with UML, HTML/CSS and Javascript practical exercises.
+              Assisted with UML, HTML/CSS and Javascript practical exercises.
             </p>
           </div>
         </li>
@@ -219,9 +233,16 @@
             <div class="item-list__entry__header">
               <b>Internship Student</b>, National Institute of Informatics (Tokyo, Japan)
             </div>
+
             <p class="item-list__entry__content">
-            Joined the Aizawa Laboratory to collaborate on using machine learning to extend my original keyphrase extraction method (TopicRank).
+              Joined the Aizawa Laboratory to collaborate on using machine learning to extend my original keyphrase extraction method (TopicRank).
             </p>
+
+            <div class="item-list__entry__footer">
+              <span class="tag">Python</span>
+              <span class="tag">NLTK</span>
+              <span class="tag">scikit-learn</span>
+            </div>
           </div>
         </li>
         <li>
@@ -231,10 +252,16 @@
             <div class="item-list__entry__header">
               <b>Internship Student</b>, National Institute of Informatics (Tokyo, Japan)
             </div>
+
             <p class="item-list__entry__content">
-            Designed and implemented a solution for "Behavior Imitation on a Humanoid Robot."
-            The C++ system is tracking human motions from Microsoft's Kinect and controlling the humanoid robot NAO to reproduce the movements.
+              Designed and implemented a solution for "Behavior Imitation on a Humanoid Robot."
+              The C++ system is tracking human motions from Microsoft's Kinect and controlling the humanoid robot NAO to reproduce the movements.
             </p>
+
+            <div class="item-list__entry__footer">
+              <span class="tag">C++</span>
+              <span class="tag">OpenNI</span>
+            </div>
           </div>
         </li>
         <li>
@@ -244,10 +271,17 @@
             <div class="item-list__entry__header">
               <b>Software Developer</b>, Magic Instinct Software (Nantes, France)
             </div>
+
             <p class="item-list__entry__content">
-            Implemented the frontend of a web application for manually cropping raster charts.
-            The application is built with Ext JS and OpenLayers for map rendering.
+              Implemented the frontend of a web application for manually cropping raster charts.
+              The application is built with Ext JS and OpenLayers for map rendering.
             </p>
+
+            <div class="item-list__entry__footer">
+              <span class="tag">Javascript</span>
+              <span class="tag">Ext JS</span>
+              <span class="tag">OpenLayers</span>
+            </div>
           </div>
         </li>
         <li>
@@ -257,10 +291,18 @@
             <div class="item-list__entry__header">
               <b>Internship Student</b>, Magic Instinct Software (Nantes, France)
             </div>
+
             <p class="item-list__entry__content">
-            Implemented a web application for tracking the geolocation of nautical buoys used to study marine ecosystems.
-            The internship was an exploratory work of the Objective-J and Cappuccino technologies, which are web equivalents to Objective-C and Cocoa.
+              Implemented a web application for tracking the geolocation of nautical buoys used to study marine ecosystems.
+              The internship was an exploratory work of the Objective-J and Cappuccino technologies, which are web equivalents to Objective-C and Cocoa. Later, I also ported the application on iPad (with Objective-C and Cocoa).
             </p>
+
+            <div class="item-list__entry__footer">
+              <span class="tag">Objective-J</span>
+              <span class="tag">Cappuccino</span>
+              <span class="tag">Objective-C</span>
+              <span class="tag">Cocoa</span>
+            </div>
           </div>
         </li>
         <li>
@@ -270,22 +312,27 @@
             <div class="item-list__entry__header">
               <b>Internship Student</b>, IRCCyN (Nantes, France)
             </div>
+
             <p class="item-list__entry__content">
-            Implemented the OSEK COM External Communication protocol for the Trampoline real-time operating system.
+              Implemented the OSEK COM External Communication protocol for the Trampoline real-time operating system.
             </p>
+
+            <div class="item-list__entry__footer">
+              <span class="tag">C</span>
+            </div>
           </div>
         </li>
       </ol>
 
       <div id="publications" class="section__content group-section__content group-section__content--publications filtered-view filtered-view--all">
-        <div class="filtered-view__filters button-sequence">
-          <button class="button--all" onClick="selectFilter('publications', 'all')" selected>
+        <div class="filtered-view__filters selector-sequence">
+          <span class="selector selector--all" onClick="selectFilter('publications', 'all')" selected>
             All
-          </button><button class="button--english-only" onClick="selectFilter('publications', 'english-only')">
+          </span><span class="selector selector--english-only" onClick="selectFilter('publications', 'english-only')">
             English
-          </button><button class="button--french-only" onClick="selectFilter('publications', 'french-only')">
+          </span><span class="selector selector--french-only" onClick="selectFilter('publications', 'french-only')">
             French
-          </button>
+          </span>
         </div>
 
         <ol class="item-list">

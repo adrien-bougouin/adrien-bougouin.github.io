@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Noto Emoji';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../font/noto_emoji.ttf) format('truetype');
+}
+
+.noto-emoji {
+  display: inline-block;
+  font-family: 'Noto Emoji';
+}
+
+.smiling-face--with-halo:after {
+  content: '\1F607';
+}
+
+.grinning-face--with-sweat:after {
+  content: '\1F605';
+}
