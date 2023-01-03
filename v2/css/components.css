@@ -99,7 +99,7 @@
   --c-lvl5: var(--c-background-hl);
 
   display: inline-block;
-  border: solid 1px var(--c-text-bold);
+  border: solid 1px var(--c-text-primary);
   width: calc(5ch - (var(--border-width) * 2));
   height: 1ch;
 
