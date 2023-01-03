@@ -101,7 +101,7 @@
   display: inline-block;
   border: solid 1px var(--c-text-bold);
   width: calc(5ch - (var(--border-width) * 2));
-  height: 0.5em;
+  height: 1ch;
 
   background: linear-gradient(
     to right,
