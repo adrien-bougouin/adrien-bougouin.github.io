@@ -5,7 +5,7 @@
   src: url(../font/material_icons.woff2) format('woff2');
 }
 
-.material-icons::after {
+.icon::after {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -22,46 +22,46 @@
   vertical-align: middle;
 }
 
-.material-icons.bib-icon::after {
+.icon.bib-icon::after {
   content: "format_quote";
 }
 
-.material-icons.dark-mode-icon::after {
+.icon.dark-mode-icon::after {
   content: "dark_mode";
 }
 
-.material-icons.external-link-icon::after {
+.icon.external-link-icon::after {
   content: "launch";
 }
 
-.material-icons.filter-icon::after {
+.icon.filter-icon::after {
   content: "filter_list";
 }
 
-.material-icons.info-icon::after {
+.icon.info-icon::after {
   content: "info";
 }
 
-.material-icons.light-mode-icon::after {
+.icon.light-mode-icon::after {
   content: "light_mode";
 }
 
-.material-icons.paper-icon::after {
+.icon.paper-icon::after {
   content: "description";
 }
 
-.material-icons.poster-icon::after {
+.icon.poster-icon::after {
   content: "image";
 }
 
-.material-icons.slides-icon::after {
+.icon.slides-icon::after {
   content: "slideshow";
 }
 
-.material-icons.thanks-icon::after {
+.icon.thanks-icon::after {
   content: "favorite";
 }
 
-.material-icons.thesis-icon::after {
+.icon.thesis-icon::after {
   content: "description";
 }

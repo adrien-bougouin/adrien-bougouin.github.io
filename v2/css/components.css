@@ -246,10 +246,6 @@
   width: max-content;
 }
 
-.background-toggle__info.tooltip-anchor {
-  position: revert;
-}
-
 .item-list__entry__footer .tooltip-anchor:hover > .tooltip {
   --vertical-spacing-unit: var(--gutter-size);
 }

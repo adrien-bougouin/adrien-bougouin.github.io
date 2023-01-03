@@ -43,7 +43,11 @@ section + section {
   display: inline-block;
 }
 
-#information img.profile-picture {
+.background-toggle__info.tooltip-anchor {
+  padding: 0.5ch 0;
+}
+
+#information .profile-picture {
   display: block;
   border-style: solid;
   border-width: var(--profile-picture-border-width);
@@ -84,7 +88,7 @@ section + section {
     width: calc(100% - var(--gutter-size) - (var(--max-profile-picture-width) + (var(--profile-picture-border-width) * 2)));
   }
 
-  #information img.profile-picture {
+  #information .profile-picture {
     display: inline-block;
     float: right;
     margin-top: 0;
@@ -94,7 +98,7 @@ section + section {
   #introduction p {
     margin-left: auto;
     margin-right: auto;
-    width: 720px;
+    width: 80ch;
   }
 
   #skills .section__content {
