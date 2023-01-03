@@ -91,7 +91,7 @@
 }
 
 .score-ladder {
-  --c-border-color: var(--c-text-bold);
+  --border-width: 1px;
   --c-lvl1: var(--c-background-hl);
   --c-lvl2: var(--c-background-hl);
   --c-lvl3: var(--c-background-hl);
@@ -99,21 +99,17 @@
   --c-lvl5: var(--c-background-hl);
 
   display: inline-block;
-  border: solid 1px var(--c-border-color);
-  width: calc((0.5em * 5) + (1px * 4));
+  border: solid 1px var(--c-text-bold);
+  width: calc(5ch - (var(--border-width) * 2));
   height: 0.5em;
 
   background: linear-gradient(
     to right,
-    var(--c-lvl1) 0 0.5em,
-    var(--c-border-color) 0.5em calc(0.5em + 1px),
-    var(--c-lvl2) calc(0.5em + 1px) calc(1em + 1px),
-    var(--c-border-color) calc(1em + 1px) calc(1em + 2px),
-    var(--c-lvl3) calc(1em + 2px) calc(1.5em + 2px),
-    var(--c-border-color) calc(1.5em + 2px) calc(1.5em + 3px),
-    var(--c-lvl4) calc(1.5em + 3px) calc(2em + 3px),
-    var(--c-border-color) calc(2em + 3px) calc(2em + 4px),
-    var(--c-lvl5) calc(2em + 4px) calc(2.5em + 4px)
+    var(--c-lvl1) 0 calc(1ch - var(--border-width)),
+    var(--c-lvl2) calc(1ch - 1px) 2ch,
+    var(--c-lvl3) 2ch 3ch,
+    var(--c-lvl4) 3ch 4ch,
+    var(--c-lvl5) 4ch calc(5ch - var(--border-width))
   );
 }
 
