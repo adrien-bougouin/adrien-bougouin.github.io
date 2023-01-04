@@ -1,0 +1,121 @@
+@media print {
+  :root {
+    --gutter-size: 4px;
+
+    --max-profile-picture-width: 108px;
+    --profile-picture-border-width: 8px;
+  }
+
+  body.background--light {
+    --c-background:     transparent;
+    --c-background-hl:  transparent;
+    --c-accent:         var(--c-text-primary);
+  }
+
+  body.background--dark {
+    --c-background:     transparent;
+    --c-background-hl:  transparent;
+    --c-accent:         var(--c-text-primary);
+  }
+
+  body {
+    font-size: 8pt;
+    margin: var(--gutter-size);
+  }
+
+  section {
+    margin: 0 var(--gutter-size);
+    padding: var(--gutter-size);
+  }
+
+  .background-toggle {
+    display: none !important;
+  }
+
+  #information {
+    min-heigt: none
+  }
+
+  #information .section__header,
+  #information .section__content {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - var(--gutter-size) - (var(--max-profile-picture-width) + (var(--profile-picture-border-width) * 2)));
+  }
+
+  #information .profile-picture {
+    display: inline-block;
+    float: right;
+    margin-top: 0;
+    border: none;
+    width: var(--max-profile-picture-width);
+  }
+
+  #skills .section__content {
+    display: flex;
+  }
+
+  #skills .section__content > * {
+    flex: auto;
+  }
+
+  #skills .section__content > *:not(:first-child) {
+    margin-top: 0;
+    margin-left: calc(var(--gutter-size) * 2);
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  .masked {
+    background: revert;
+  }
+
+  .group-section__nav__selector {
+    display: none;
+    border-bottom: none;
+    padding-bottom: 0;
+    color: var(--c-text-bold) !important;
+  }
+
+  .group-section--experience .group-section__nav__selector--experience,
+  .group-section--publications .group-section__nav__selector--publications {
+    display: revert;
+  }
+
+  .group-section--experience .group-section__content--experience,
+  .group-section--publications .group-section__content--publications {
+    display: revert;
+  }
+
+  .score-ladder {
+    display: inline;
+    border: none;
+    background: none;
+  }
+
+  .score-ladder--lvl1::before {
+    content: "1/5";
+  }
+
+  .score-ladder--lvl2::before {
+    content: "2/5";
+  }
+
+  .score-ladder--lvl3::before {
+    content: "3/5";
+  }
+
+  .score-ladder--lvl4::before {
+    content: "4/5";
+  }
+
+  .score-ladder--lvl5::before {
+    content: "5/5";
+  }
+
+  .tag {
+    border: solid 1px var(--c-text-secondary);
+  }
+}
