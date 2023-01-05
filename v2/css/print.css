@@ -2,7 +2,7 @@
   :root {
     --gutter-size: 4px;
 
-    --max-profile-picture-width: 108px;
+    --max-profile-picture-width: 116px;
     --profile-picture-border-width: 8px;
   }
 
@@ -19,17 +19,18 @@
   }
 
   body {
-    font-size: 8pt;
-    margin: var(--gutter-size);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 7pt;
+    margin: calc(var(--gutter-size) * 4);
   }
 
   section {
     margin: 0 var(--gutter-size);
-    padding: var(--gutter-size);
+    padding:  0 var(--gutter-size) var(--gutter-size) var(--gutter-size);
   }
 
-  .background-toggle {
-    display: none !important;
+  p {
+    text-align: justify;
   }
 
   #information {
@@ -64,8 +65,12 @@
     margin-left: calc(var(--gutter-size) * 2);
   }
 
+  #publications .item-list__entry.filtered-view__content {
+    display: block!important;
+  }
+
   .no-print {
-    display: none;
+    display: none !important;
   }
 
   .masked {
@@ -73,25 +78,28 @@
   }
 
   .group-section__nav__selector {
-    border-bottom: none;
-    padding-bottom: 0;
+    display: none;
+    border: none;
+    padding-bottom: revert;
     color: var(--c-text-bold) !important;
   }
 
-  .group-section__nav__selector--experience {
-    display: inline-block !important;
+  .group-section__nav__selector:not(:first-child) {
+    margin-left: revert;
   }
 
-  .group-section__nav__selector--publications {
-    display: none !important;
+  .group-section--experience .group-section__nav__selector--experience,
+  .group-section--publications .group-section__nav__selector--publications {
+    display: inline-block;
   }
 
-  .group-section__content--experience {
-    display: block !important;
+  .group-section .group-section__content {
+    display: none;
   }
 
-  .group-section__content--publications {
-    display: none !important;
+  .group-section--experience .group-section__content--experience,
+  .group-section--publications .group-section__content--publications {
+    display: block;
   }
 
   .score-ladder {
@@ -101,23 +109,23 @@
   }
 
   .score-ladder--lvl1::before {
-    content: "1/5";
+    content: "- 1/5";
   }
 
   .score-ladder--lvl2::before {
-    content: "2/5";
+    content: "- 2/5";
   }
 
   .score-ladder--lvl3::before {
-    content: "3/5";
+    content: "- 3/5";
   }
 
   .score-ladder--lvl4::before {
-    content: "4/5";
+    content: "- 4/5";
   }
 
   .score-ladder--lvl5::before {
-    content: "5/5";
+    content: "- 5/5";
   }
 
   .tag {

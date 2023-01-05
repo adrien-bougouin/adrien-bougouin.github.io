@@ -34,6 +34,7 @@ section + section {
 }
 
 .background-toggle {
+  display: none;
   position: fixed !important;
   top: var(--gutter-size);
   right: var(--gutter-size);
@@ -115,8 +116,8 @@ section + section {
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (min-width: 1280px) {
   .background-toggle {
-    display: none !important;
+    display: inline-block;
   }
 }

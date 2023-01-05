@@ -32,6 +32,7 @@
 
 .icon.external-link-icon::after {
   content: "launch";
+  vertical-align: bottom;
 }
 
 .icon.filter-icon::after {
