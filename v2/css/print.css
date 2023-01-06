@@ -1,4 +1,8 @@
 @media print {
+  @page {
+    margin: 0.5cm;
+  }
+
   :root {
     --gutter-size: 4px;
 
@@ -19,9 +23,9 @@
   }
 
   body {
+    margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 7pt;
-    margin: calc(var(--gutter-size) * 4);
+    font-size: 8pt;
   }
 
   section {
@@ -47,7 +51,7 @@
   #information .profile-picture {
     display: inline-block;
     float: right;
-    margin-top: 0;
+    margin: 0;
     border: none;
     width: var(--max-profile-picture-width);
   }
@@ -91,6 +95,23 @@
   .group-section--experience .group-section__nav__selector--experience,
   .group-section--publications .group-section__nav__selector--publications {
     display: inline-block;
+  }
+
+  .group-section__nav__selector::after {
+    padding-left: 1ch;
+    font-size: 0.66em;
+    font-weight: normal;
+    line-height: 1.5em;
+    vertical-align: middle;
+    color: var(--c-text-secondary);
+  }
+
+  .group-section__nav__selector--experience::after {
+    content: "(you can also see the list of my publications at https://adrien-bougouin.github.io)";
+  }
+
+  .group-section__nav__selector--publications::after {
+    content: "(you can also see the list of my past and current jobs at https://adrien-bougouin.github.io)";
   }
 
   .group-section .group-section__content {
