@@ -191,8 +191,6 @@
   color: var(--c-text-primary);
 }
 
-.selector--en:lang(en):hover,
-.selector--fr:lang(fr):hover,
 .background--light .selector--light:hover,
 .background--dark .selector--dark:hover,
 .filtered-view--all .selector--all:hover,
