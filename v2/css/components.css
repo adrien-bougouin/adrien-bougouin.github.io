@@ -90,6 +90,26 @@
   margin-top: var(--gutter-size);
 }
 
+.language-selectors {
+  display: inline-block;
+  background-color: var(--c-solarized-green);
+}
+
+.language-selectors .wovn-logo {
+  display: inline-block;
+  width: 2ch;
+  padding: 0 1ch;
+}
+
+.language-selectors .wovn-logo svg {
+  width: 100%;
+  fill: var(--c-background);
+}
+
+.language-selectors .selector-sequence {
+  border-color: var(--c-solarized-green);
+}
+
 .score-ladder {
   --border-width: 1px;
   --c-lvl1: var(--c-background-hl);
@@ -191,6 +211,8 @@
   color: var(--c-text-primary);
 }
 
+.selector--en:lang(en):hover,
+.selector--fr:lang(fr):hover,
 .background--light .selector--light:hover,
 .background--dark .selector--dark:hover,
 .filtered-view--all .selector--all:hover,
