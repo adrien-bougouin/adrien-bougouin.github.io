@@ -91,8 +91,10 @@
 }
 
 .language-selectors {
+  --main-color: var(--c-accent);
+
   display: inline-block;
-  background-color: var(--c-solarized-green);
+  background-color: var(--main-color);
 }
 
 .language-selectors .wovn-logo {
@@ -107,7 +109,7 @@
 }
 
 .language-selectors .selector-sequence {
-  border-color: var(--c-solarized-green);
+  border-color: var(--main-color);
 }
 
 .score-ladder {
@@ -222,13 +224,8 @@
 }
 
 .tag {
-  --border-width: 1px;
-  --horizontal-spacing-unit: 1ch;
-
   display: inline-block;
-  border: solid 1px var(--c-background);
-  border-radius: 0;
-  padding: calc(0.5ch - var(--border-width)) calc(var(--horizontal-spacing-unit) - var(--border-width));
+  padding: 0.5ch 1ch;
   color: var(--c-text-secondary);
   background-color: var(--c-background-hl);
 }
