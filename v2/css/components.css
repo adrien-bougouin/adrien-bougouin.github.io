@@ -225,6 +225,7 @@
 
 .tag {
   display: inline-block;
+  border: solid 1px var(--c-background);
   padding: 0.5ch 1ch;
   color: var(--c-text-secondary);
   background-color: var(--c-background-hl);
