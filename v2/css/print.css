@@ -73,6 +73,10 @@
     display: block!important;
   }
 
+  #wovn-translate-widget {
+    display: none !important;
+  }
+
   .no-print {
     display: none !important;
   }
