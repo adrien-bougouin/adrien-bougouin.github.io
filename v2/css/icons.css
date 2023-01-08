@@ -23,46 +23,42 @@
 }
 
 .icon.bib-icon::after {
-  content: "format_quote";
+  content: "\e244";
 }
 
 .icon.dark-mode-icon::after {
-  content: "dark_mode";
+  content: "\e51c";
 }
 
 .icon.external-link-icon::after {
-  content: "launch";
+  content: "\e895";
   vertical-align: bottom;
 }
 
-.icon.filter-icon::after {
-  content: "filter_list";
-}
-
 .icon.info-icon::after {
-  content: "info";
+  content: "\e88e";
 }
 
 .icon.light-mode-icon::after {
-  content: "light_mode";
+  content: "\e518";
 }
 
 .icon.paper-icon::after {
-  content: "description";
+  content: "\e873";
 }
 
 .icon.poster-icon::after {
-  content: "image";
+  content: "\e3f4";
 }
 
 .icon.slides-icon::after {
-  content: "slideshow";
+  content: "\e41b";
 }
 
 .icon.thanks-icon::after {
-  content: "favorite";
+  content: "\e87d";
 }
 
 .icon.thesis-icon::after {
-  content: "description";
+  content: "\e873";
 }
