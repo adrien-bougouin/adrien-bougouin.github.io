@@ -6,6 +6,10 @@
   content: "//\00a0"
 }
 
+.french-emphasized:lang(fr) {
+  font-style: italic;
+}
+
 .masked {
   background: linear-gradient(to right, currentColor 50%, transparent 50%);
   background-size: 200% 100%;
