@@ -9,8 +9,15 @@ body {
   margin: var(--gutter-size) 0;
 }
 
-section, h1, h2, h3, div, p, ol, ul {
+header section, h1, h2, h3, div, p, ol, ul {
   margin: 0;
+}
+
+header {
+  display: none;
+  position: fixed !important;
+  top: var(--gutter-size);
+  right: var(--gutter-size);
 }
 
 section {
@@ -33,19 +40,15 @@ section + section {
   margin-top: var(--gutter-size);
 }
 
-.background-toggle {
-  display: none;
-  position: fixed !important;
-  top: var(--gutter-size);
-  right: var(--gutter-size);
-}
-
-.background-toggle > div {
+.background-toggle__info.tooltip-anchor,
+.download-icon {
   display: inline-block;
+  padding: 0.5ch 1ch;
 }
 
-.background-toggle__info.tooltip-anchor {
-  padding: 0.5ch 0;
+.download-button {
+  display: block;
+  text-align: right;
 }
 
 #information .profile-picture {
@@ -117,7 +120,7 @@ section + section {
 }
 
 @media only screen and (min-width: 1280px) {
-  .background-toggle {
+  header {
     display: inline-block;
   }
 }

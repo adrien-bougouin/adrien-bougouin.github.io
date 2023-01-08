@@ -43,27 +43,33 @@
     </script>
   </head>
   <body class="background--light">
-    <div class="background-toggle no-print">
-      <div class="background-toggle__info tooltip-anchor icon info-icon">
-        <div class="tooltip tooltip--bottom tooltip--left icon thanks-icon">
-          <a href="https://ethanschoonover.com/solarized" target="blank">Solarized</a> theme by <b>Ethan Schoonover</b>
+    <header class="no-print">
+      <div class="background-toggle">
+        <div class="background-toggle__info tooltip-anchor icon info-icon">
+          <div class="tooltip tooltip--bottom tooltip--left icon thanks-icon">
+            <a href="https://ethanschoonover.com/solarized" target="blank">Solarized</a> theme by <b>Ethan Schoonover</b>
+          </div>
+        </div><div class="selector-sequence">
+          <div
+            class="selector selector--light tooltip-anchor icon light-mode-icon"
+            onClick="setBackgroundTheme('light')"
+          >
+            <span class="tooltip tooltip--bottom tooltip--left">Light theme</span>
+          </div><div
+            class="selector selector--dark tooltip-anchor icon dark-mode-icon"
+            onClick="setBackgroundTheme('dark')"
+          >
+            <span class="tooltip tooltip--bottom tooltip--left">Dark theme</span>
+          </div>
         </div>
       </div>
 
-      <div class="selector-sequence">
-        <div
-          class="selector selector--light tooltip-anchor icon light-mode-icon"
-          onClick="setBackgroundTheme('light')"
-        >
-          <span class="tooltip tooltip--bottom tooltip--left">Light theme</span>
-        </div><div
-          class="selector selector--dark tooltip-anchor icon dark-mode-icon"
-          onClick="setBackgroundTheme('dark')"
-        >
-          <span class="tooltip tooltip--bottom tooltip--left">Dark theme</span>
-        </div>
+      <div class="download-button">
+        <a download="adrien_bougouin" href="resume/adrien_bougouin_en.pdf" class="icon download-icon tooltip-anchor" target="_blank">
+          <div class="tooltip tooltip--bottom tooltip--left"> Download resume</div>
+        </a>
       </div>
-    </div>
+    </header>
 
     <section id="information">
       <div class="section__header">

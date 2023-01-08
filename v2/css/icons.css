@@ -30,6 +30,10 @@
   content: "\e51c";
 }
 
+.icon.download-icon::after {
+  content: "\f000";
+}
+
 .icon.external-link-icon::after {
   content: "\e895";
   vertical-align: bottom;
