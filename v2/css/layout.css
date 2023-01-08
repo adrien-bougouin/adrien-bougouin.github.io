@@ -32,6 +32,10 @@ section + section {
   padding-top: var(--gutter-size);
 }
 
+p + p {
+  margin-top: var(--gutter-size);
+}
+
 .section__header {
   margin-bottom: var(--gutter-size);
 }
