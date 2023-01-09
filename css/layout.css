@@ -74,6 +74,10 @@ p + p {
   margin-top: var(--gutter-size);
 }
 
+#education {
+  padding-bottom: 0;
+}
+
 @media only screen and (min-width: 832px) {
   :root {
     --gutter-size: 16px;
