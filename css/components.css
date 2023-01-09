@@ -182,7 +182,7 @@
   display: inline-block;
   border: solid var(--border-width) var(--c-background-hl);
   border-radius: 0;
-  padding: calc(0.5ch - var(--border-width)) calc(var(--horizontal-spacing-unit) - var(--border-width));
+  padding: 0.5ch calc(var(--horizontal-spacing-unit) - var(--border-width));
   background: var(--c-background);
   color: var(--c-text-secondary);
   cursor: pointer;
@@ -195,7 +195,6 @@
 
 .selector-sequence .selector {
   border: none;
-  padding: 0.5ch 1ch;
 }
 
 .selector-sequence .selector + .selector {
