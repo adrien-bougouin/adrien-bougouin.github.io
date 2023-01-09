@@ -29,6 +29,7 @@
   --border-color: var(--c-background-hl);
 
   flex: 0 0 auto;
+  border: none;
   border-bottom: solid 2px;
   border-image: linear-gradient(
     to right,
@@ -91,16 +92,14 @@
 }
 
 .language-selectors {
-  --main-color: var(--c-accent);
-
-  display: inline-block;
-  background-color: var(--main-color);
+  display: inline-flex;
+  background: var(--c-accent);
 }
 
 .language-selectors .wovn-logo {
   display: inline-block;
   width: 2ch;
-  padding: 0 1ch;
+  padding: 0.5ch 1ch;
 }
 
 .language-selectors .wovn-logo svg {
@@ -108,8 +107,15 @@
   fill: var(--c-background);
 }
 
-.language-selectors .selector-sequence {
-  border-color: var(--main-color);
+.language-selectors .selector {
+  border-color: var(--c-text-primary);
+}
+
+.language-selectors .selector:hover,
+.language-selectors .selector--en:lang(en),
+.language-selectors .selector--fr:lang(fr) {
+  background: var(--c-text-primary);
+  color: var(--c-background);
 }
 
 .score-ladder {
@@ -176,34 +182,25 @@
 }
 
 .selector {
-  --border-width: 1px;
-  --horizontal-spacing-unit: 1ch;
-
   display: inline-block;
-  border: solid var(--border-width) var(--c-background-hl);
+  border: solid 1px var(--c-background-hl);
   border-radius: 0;
-  padding: 0.5ch calc(var(--horizontal-spacing-unit) - var(--border-width));
+  padding: calc(0.5ch - 1px) calc(1ch - 1px);
   background: var(--c-background);
   color: var(--c-text-secondary);
   cursor: pointer;
 }
 
 .selector-sequence {
-  display: inline-block;
-  border: solid 1px var(--c-background-hl);
-}
-
-.selector-sequence .selector {
-  border: none;
+  display: inline-flex;
 }
 
 .selector-sequence .selector + .selector {
-  border-left: solid 1px var(--c-background-hl);
+  border-left: none;
+  padding-left: 1ch;
 }
 
 .selector:hover,
-.selector--en:lang(en),
-.selector--fr:lang(fr),
 .background--light .selector--light,
 .background--dark .selector--dark,
 .filtered-view--all .selector--all,
