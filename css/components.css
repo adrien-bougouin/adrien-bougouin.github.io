@@ -195,6 +195,7 @@
 
 .selector-sequence .selector {
   border: none;
+  padding: 0.5ch 1ch;
 }
 
 .selector-sequence .selector + .selector {
