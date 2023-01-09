@@ -118,6 +118,14 @@
     content: "(you can also see the list of my past and current jobs at https://adrien-bougouin.github.io)";
   }
 
+  .group-section__nav__selector--experience:lang(fr)::after {
+    content: "(retrouvez la liste de mes publications sur mon CV en ligne: https://adrien-bougouin.github.io)";
+  }
+
+  .group-section__nav__selector--publications:lang(fr)::after {
+    content: "(retrouvez le détail de mon expérience professionnelle sur mon CV en ligne: https://adrien-bougouin.github.io)";
+  }
+
   .group-section .group-section__content {
     display: none;
   }
