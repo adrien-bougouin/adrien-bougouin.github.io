@@ -37,9 +37,9 @@
     transparent 95%
   );
   border-image-slice: 1;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
   padding-bottom: calc(var(--gutter-size) / 4);
   color: var(--c-text-secondary);
 }
