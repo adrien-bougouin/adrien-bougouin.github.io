@@ -29,7 +29,6 @@
   --border-color: var(--c-background-hl);
 
   flex: 0 0 auto;
-  border: none;
   border-bottom: solid 2px;
   border-image: linear-gradient(
     to right,
@@ -38,6 +37,9 @@
     transparent 95%
   );
   border-image-slice: 1;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   padding-bottom: calc(var(--gutter-size) / 4);
   color: var(--c-text-secondary);
 }
