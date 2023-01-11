@@ -95,13 +95,14 @@
 
 .language-selectors {
   display: inline-flex;
+  border: solid 1px var(--c-accent);
   background: var(--c-accent);
 }
 
 .language-selectors .wovn-logo {
   display: inline-block;
   width: 2ch;
-  padding: 0.5ch 1ch;
+  padding: calc(0.5ch - 1px) 1ch calc(0.5ch - 1px) calc(1ch - 1px) ;
 }
 
 .language-selectors .wovn-logo svg {
@@ -109,15 +110,8 @@
   fill: var(--c-background);
 }
 
-.language-selectors .selector {
-  border-color: var(--c-text-primary);
-}
-
-.language-selectors .selector:hover,
-.language-selectors .selector--en:lang(en),
-.language-selectors .selector--fr:lang(fr) {
-  background: var(--c-text-primary);
-  color: var(--c-background);
+.language-selectors .selector-sequence .selector:last-child {
+  padding-right: calc(1ch - 2px);
 }
 
 .score-ladder {
@@ -205,6 +199,8 @@
 .selector:hover,
 .background--light .selector--light,
 .background--dark .selector--dark,
+.selector--en:lang(en),
+.selector--fr:lang(fr),
 .filtered-view--all .selector--all,
 .filtered-view--english-only .selector--english-only,
 .filtered-view--french-only .selector--french-only {
