@@ -93,27 +93,6 @@
   margin-top: var(--gutter-size);
 }
 
-.language-selectors {
-  display: inline-flex;
-  border: solid 1px var(--c-accent);
-  background: var(--c-accent);
-}
-
-.language-selectors .wovn-logo {
-  display: inline-block;
-  width: 2ch;
-  padding: calc(0.5ch - 1px) 1ch calc(0.5ch - 1px) calc(1ch - 1px) ;
-}
-
-.language-selectors .wovn-logo svg {
-  width: 100%;
-  fill: var(--c-background);
-}
-
-.language-selectors .selector-sequence .selector:last-child {
-  padding-right: calc(1ch - 2px);
-}
-
 .score-ladder {
   --border-width: 1px;
   --c-lvl1: var(--c-background-hl);
@@ -216,6 +195,27 @@
 .filtered-view--english-only .selector--english-only:hover,
 .filtered-view--french-only .selector--french-only:hover {
   cursor: revert;
+}
+
+.language-selectors {
+  display: inline-flex;
+  border: solid 1px var(--c-accent);
+  background: var(--c-accent);
+}
+
+.language-selectors .wovn-logo {
+  display: inline-block;
+  width: 2ch;
+  padding: calc(0.5ch - 1px) 1ch calc(0.5ch - 1px) calc(1ch - 1px) ;
+}
+
+.language-selectors .wovn-logo svg {
+  width: 100%;
+  fill: var(--c-background);
+}
+
+.language-selectors .selector-sequence .selector:last-child {
+  padding-right: calc(1ch - 2px);
 }
 
 .tag {
